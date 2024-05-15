@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37f313f5-031e-4692-996e-7803bc28ea00" name="Changes" comment="Initial Commit">
+    <list default="true" id="37f313f5-031e-4692-996e-7803bc28ea00" name="Changes" comment="Работа с тестовым API-сервером в классе Consumer">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/darin/springcourse/Translator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Consumer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +36,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "spring.configuration.checksum": "1b4480e6741573273aaf275ef1773e78"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Translator">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Consumer" />
       <module name="RestAPIConsumer" />
@@ -48,8 +48,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Translator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.darin.springcourse.Translator" />
+      <module name="RestAPIConsumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.darin.springcourse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Translator" />
         <item itemvalue="Application.Consumer" />
       </list>
     </recent_temporary>
@@ -62,7 +76,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715683538068</updated>
-      <workItem from="1715683540332" duration="1914000" />
+      <workItem from="1715683540332" duration="5062000" />
+      <workItem from="1715783309599" duration="1717000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1715683624651</created>
@@ -78,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715683695519</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Работа с тестовым API-сервером в классе Consumer">
+      <created>1715685621215</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715685621215</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +119,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Работа с тестовым API-сервером в классе Consumer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Работа с тестовым API-сервером в классе Consumer" />
   </component>
 </project>
