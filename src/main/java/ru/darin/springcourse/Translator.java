@@ -10,10 +10,10 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Translator {
+
+    static String sentenceToTranslate = "";
+
     public static void main(String[] args) {
-        System.out.println("Введите предложение на русском языке");
-        Scanner scanner = new Scanner(System.in);
-        String sentenceToTranslate = scanner.nextLine();
 
         RestTemplate restTemplate = new RestTemplate();
         String url = "https://translate.api.cloud.yandex.net/translate/v2/translate";
@@ -25,10 +25,15 @@ public class Translator {
         jsonData.put("folderId","b1gdr734nd3lb35hbdj5");
         jsonData.put("targetLanguageCode","en");
 
-        jsonData.put("texts", "[" + sentenceToTranslate + "]");
-        HttpEntity<Map<String,String>>request = new HttpEntity<>(jsonData,httpHeaders);
-        String response = restTemplate.postForObject(url,request,String.class);
-        System.out.println(response);
+        while (!sentenceToTranslate.equals("В")) {
+            System.out.println("Введите предложение на русском языке");
+            Scanner scanner = new Scanner(System.in);
+            sentenceToTranslate = scanner.nextLine();
+            jsonData.put("texts", "[" + sentenceToTranslate + "]");
+            HttpEntity<Map<String,String>>request = new HttpEntity<>(jsonData,httpHeaders);
+            String response = restTemplate.postForObject(url,request,String.class);
+            System.out.println(response);
+        }
 
     }
 }

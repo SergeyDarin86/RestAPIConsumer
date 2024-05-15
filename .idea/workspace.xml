@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37f313f5-031e-4692-996e-7803bc28ea00" name="Changes" comment="Работа с тестовым API-сервером в классе Consumer">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/darin/springcourse/Translator.java" afterDir="false" />
+    <list default="true" id="37f313f5-031e-4692-996e-7803bc28ea00" name="Changes" comment="Работа с API Translator Yandex в классе Translator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/darin/springcourse/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/darin/springcourse/Translator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715683538068</updated>
       <workItem from="1715683540332" duration="5062000" />
-      <workItem from="1715783309599" duration="1717000" />
+      <workItem from="1715783309599" duration="2564000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1715683624651</created>
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715685621215</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Работа с API Translator Yandex в классе Translator">
+      <created>1715785871594</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715785871594</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +127,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Работа с тестовым API-сервером в классе Consumer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Работа с тестовым API-сервером в классе Consumer" />
+    <MESSAGE value="Работа с API Translator Yandex в классе Translator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Работа с API Translator Yandex в классе Translator" />
   </component>
 </project>
