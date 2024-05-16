@@ -22,7 +22,7 @@ public class Translator {
         String url = "https://translate.api.cloud.yandex.net/translate/v2/translate";
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
-        httpHeaders.add("Authorization", "Bearer " + "t1.9euelZqVxsedmJaNkY3OjZqUnseWl-3rnpWanZvNm5bNzIzIzcaKz5mcypTl8_ceNWhN-e8OYi4l_d3z915jZU357w5iLiX9zef1656VmsvGx5mOyMvMicuJzIyRmsaW7_zF656VmsvGx5mOyMvMicuJzIyRmsaW.XW1sixT4JmpOsuVEkVRP0SqWNfewWiVcOJbHzywQlDMm8FiWUCHYYwqi346J3FIcQIDy1AtMJrbkfkdX8O47Cg");
+        httpHeaders.add("Authorization", "Bearer " + "token");
 
         Map<String, String> jsonData = new HashMap<>();
         jsonData.put("folderId","b1gdr734nd3lb35hbdj5");
