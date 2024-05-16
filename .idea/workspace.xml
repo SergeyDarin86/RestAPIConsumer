@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37f313f5-031e-4692-996e-7803bc28ea00" name="Changes" comment="Работа с API Translator Yandex в классе Translator">
+    <list default="true" id="37f313f5-031e-4692-996e-7803bc28ea00" name="Changes" comment="Добавил цикл для работы со Scanner">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/darin/springcourse/Translation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/darin/springcourse/TranslatorResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/darin/springcourse/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/darin/springcourse/Translator.java" afterDir="false" />
     </list>
@@ -32,14 +34,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "spring.configuration.checksum": "1b4480e6741573273aaf275ef1773e78"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;1b4480e6741573273aaf275ef1773e78&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Translator">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Consumer" />
@@ -77,7 +79,8 @@
       <option name="presentableId" value="Default" />
       <updated>1715683538068</updated>
       <workItem from="1715683540332" duration="5062000" />
-      <workItem from="1715783309599" duration="2564000" />
+      <workItem from="1715783309599" duration="3296000" />
+      <workItem from="1715856871836" duration="2249000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1715683624651</created>
@@ -107,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715785871594</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Добавил цикл для работы со Scanner">
+      <created>1715786842026</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715786842026</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +138,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Работа с тестовым API-сервером в классе Consumer" />
     <MESSAGE value="Работа с API Translator Yandex в классе Translator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Работа с API Translator Yandex в классе Translator" />
+    <MESSAGE value="Добавил цикл для работы со Scanner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил цикл для работы со Scanner" />
   </component>
 </project>

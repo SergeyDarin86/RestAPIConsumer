@@ -1,5 +1,8 @@
 package ru.darin.springcourse;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -13,13 +16,13 @@ public class Translator {
 
     static String sentenceToTranslate = "";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws JsonProcessingException {
 
         RestTemplate restTemplate = new RestTemplate();
         String url = "https://translate.api.cloud.yandex.net/translate/v2/translate";
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
-        httpHeaders.add("Authorization", "Bearer " + "t1.9euelZqVnpiUkM-KkYyXmZSVl56YzO3rnpWanZvNm5bNzIzIzcaKz5mcypTl8_dDb2xN-e9BAjgB_d3z9wMeak3570ECOAH9zef1656VmpaJic-Wio6Sy42Rx5Sdyc7L7_zF656VmpaJic-Wio6Sy42Rx5Sdyc7L.LIOXfXSI56erX5hsNAtEwNj7c_g5rEmcTuh3XY-AemqSKSmRW_zyhkGY1KovZ6VdLAIRlPejCDXg1z1LeadtDw");
+        httpHeaders.add("Authorization", "Bearer " + "t1.9euelZqVxsedmJaNkY3OjZqUnseWl-3rnpWanZvNm5bNzIzIzcaKz5mcypTl8_ceNWhN-e8OYi4l_d3z915jZU357w5iLiX9zef1656VmsvGx5mOyMvMicuJzIyRmsaW7_zF656VmsvGx5mOyMvMicuJzIyRmsaW.XW1sixT4JmpOsuVEkVRP0SqWNfewWiVcOJbHzywQlDMm8FiWUCHYYwqi346J3FIcQIDy1AtMJrbkfkdX8O47Cg");
 
         Map<String, String> jsonData = new HashMap<>();
         jsonData.put("folderId","b1gdr734nd3lb35hbdj5");
@@ -33,6 +36,20 @@ public class Translator {
             HttpEntity<Map<String,String>>request = new HttpEntity<>(jsonData,httpHeaders);
             String response = restTemplate.postForObject(url,request,String.class);
             System.out.println(response);
+
+            // Парсим полученный текст вручную, который в формате json с помощью библиотеки Jackson
+            // Можно создать отдельный класс для нашего json, чтобы наш Jackson смог его распарсить автоматически
+
+            // В ответе сервер вернет массив "translations", внутри которого ключ "text"
+            ObjectMapper mapper = new ObjectMapper();
+            JsonNode jsonNode = mapper.readTree(response);
+            System.out.println("===================================================");
+            System.out.println(jsonNode.get("translations").get(0).get("text"));
+
+            // Работа с классом YandexResponse для получения ответа
+            System.out.println("====================================================");
+            TranslatorResponse translatorResponse = restTemplate.postForObject(url,request, TranslatorResponse.class);
+            translatorResponse.getTranslations().forEach(translation -> System.out.println(translation.getText()));
         }
 
     }
